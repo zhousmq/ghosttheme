@@ -1,0 +1,27 @@
+{{#contentFor "scripts"}}
+<script>
+    $(document).ready(function () {
+        //导航处理
+        $('.sec_nav a').each(function(){
+           var thistext = $(this).text().split("|");
+           if(thistext[0] == $(this).parent().parent().find('.alink').text()){
+             $(this).text(thistext[1]);
+           }else{
+             $(this).remove()
+           }
+        });
+        $('.sec_nav').each(function(){
+          if($(this).children().length<1){
+            $(this).remove()
+          }
+        });
+
+        $('.navlink').hover(function(){
+          $(this).children(".sec_nav").show();
+        },function(){
+          $(this).children(".sec_nav").hide();
+        });
+
+    });
+</script>
+{{/contentFor}}
