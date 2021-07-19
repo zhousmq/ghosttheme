@@ -1,0 +1,16 @@
+<div class="m-search js-search">
+  <button class="m-icon-button outlined as-close-search js-close-search" aria-label="Close search">
+    <span class="icon-close">{{> "icons/close"}}</span>
+  </button>
+  <div class="m-search__content">
+    <form class="m-search__form">
+      <fieldset>
+        <!-- <span class="icon-search m-search-icon">{{> "icons/search"}}</span> -->
+        <input type="text" id="search-bar" class="m-input in-search js-input-search" placeholder="{{t "Type to search"}}" aria-label="Type to search">
+      </fieldset>
+    </form>
+    <div class="js-search-results">
+      <ul id="search-results"></ul>
+    </div>
+  </div>
+</div>
