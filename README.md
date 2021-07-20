@@ -16,7 +16,7 @@ ghost太坑，并没有嵌套的二级导航，所以折腾了几天自己弄了
 
 三、搜索
 导入此主题后，进入后台，进入Integrations，最下面的CUSTOM INTEGRATIONS，添加一个自定义integration，(name设置为content)，添加完成后会有一个key（示例：39.......d59be），复制此key；
-再到在Code Injection修改Site Footer里面加上以下搜索必须用到的js代码
+再到在Code Injection修改Site Footer里面加上以下搜索必须用到的js代码（注意：中文的还需要加上indexOptions配置，详见：https://github.com/gmfmi/searchinGhost#language-settings）
 ![image](https://github.com/zhousmq/ghosttheme/blob/main/readme/search.png)
 
 最后：
